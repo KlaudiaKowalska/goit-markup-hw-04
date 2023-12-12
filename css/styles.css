@@ -9,6 +9,7 @@
   --cloud: #f4f4fd;
   --light: #e7e9fc;
   --grey: #2f2e42;
+  --light-grey: #8e8f99;
 }
 
 * {
@@ -140,10 +141,12 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1703462400&Signature=ic-nLQeZM7b37gNqRM5LgDBhBgnwxwSBlyoCDNf5S76UZmJ8oqLv~~krK9JLQ3IqKESOJk0FhQGFm0xVzyHwEoNeeUA9bsp~jbr4APmtohsNAWZJE0u0rU4BAt-3dvTeTEFI8F68h5omLISH3AI7JZO6r5DCaJDo50yiLdfsRpocV35-o9HKTXoZ3bxQwGFPL0U-5CazUpfLD5mRXoVXsXMnZGVuFwGOI41TOTNI3rKIMYyp2~ixnn5MBfUVjsU80fwiaFNMBerPZULb~2FrSDwMKxeMJ46XMy-XZuEyDuKJYHhOanVCG0Ie2UEWzK1h2vaLcvTnOnimFDzDUpWSLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    url(../images/ludzie-w-biurze.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1440px;
+  margin-top: 9px;
 }
 
 .descriptions-div {
@@ -399,6 +402,16 @@ img {
   margin-bottom: 72px;
 }
 
+.offer-link {
+  display: block;
+}
+
+.offer-link:hover,
+.offer-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .offer {
   display: flex;
   flex-wrap: wrap;
@@ -444,6 +457,8 @@ img {
   border-bottom: 1px solid #e7e9fc;
   height: 72px;
   display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-highlight {
@@ -482,18 +497,18 @@ img {
   margin-bottom: 8px;
 }
 
-.icon-logo {
-  width: 16px;
-  height: 16px;
-  background-color: var(--iris);
-}
-
-.icon-logo-div {
+.icon-logo-ul {
   gap: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
+  margin-top: 8px;
+  list-style: none;
+}
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .customers-highlight {
@@ -504,31 +519,64 @@ img {
   text-transform: capitalize;
   color: var(--navy-blue);
   margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .icon-customers {
   width: 104px;
   height: 56px;
   flex-shrink: 0;
+  fill: currentColor;
 }
 
-.icon-customers-div {
-  width: 168px;
+.customer-element {
   height: 88px;
   border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-
   align-items: center;
   display: flex;
   justify-content: center;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  width: calc((100% - 120px) / 6);
 }
-
-.customer-div {
+.icon-customers-ul {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-top: 72px;
   margin-bottom: 120px;
+  list-style: none;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-grey);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
 }
 
 .social-media-paragraph {
@@ -539,6 +587,7 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 
 .icon-social {
@@ -549,18 +598,45 @@ img {
   border-radius: 50%;
 }
 
-.icon-social-div {
+.icon-social-ul {
   display: flex;
   gap: 16px;
+  list-style: none;
 }
 
 .footer-div {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.logo-div {
+  margin-right: 120px;
 }
 
 .social {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+
+.logo-element {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover {
+  background-color: #404bbf;
+}
+
+.icon-logo {
+  color: var(--cloud);
 }
