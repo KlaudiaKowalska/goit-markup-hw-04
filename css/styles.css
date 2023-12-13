@@ -538,8 +538,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 72px;
-  margin-bottom: 120px;
   list-style: none;
 }
 
