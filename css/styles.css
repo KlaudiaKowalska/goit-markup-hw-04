@@ -522,8 +522,6 @@ img {
 }
 
 .icon-customers {
-  width: 104px;
-  height: 56px;
   flex-shrink: 0;
   fill: currentColor;
 }
@@ -534,7 +532,6 @@ img {
   align-items: center;
   display: flex;
   justify-content: center;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   width: calc((100% - 120px) / 6);
 }
 .icon-customers-ul {
