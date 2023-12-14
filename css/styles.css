@@ -10,6 +10,7 @@
   --light: #e7e9fc;
   --grey: #2f2e42;
   --light-grey: #8e8f99;
+  --GREEN: #31d0aa;
 }
 
 * {
@@ -244,6 +245,11 @@ img {
 .characters-lists {
   display: flex;
   gap: 24px;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  color: var(--GREEN);
 }
 
 .footer-index {
@@ -524,6 +530,11 @@ img {
 .icon-customers {
   flex-shrink: 0;
   fill: currentColor;
+}
+
+.icon-customers:hover,
+.icon-customers:focus {
+  color: var(--ocean);
 }
 
 .customer-element {
